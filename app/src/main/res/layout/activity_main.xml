@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:background="@color/white">
+
+    <com.library.rullerview.RulerView
+        android:id="@+id/rulerView"
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        app:rv_maxValue="100"
+        app:rv_minValue="-100"
+        app:rv_currentValue="0"
+        app:textColor="@color/white"
+        app:rv_gradationGap="8dp"
+        app:rv_gradationUnit="1"
+        app:rv_gradationNumberGap="10dp"
+        app:textSize="10dp"
+        android:layout_centerInParent="true"
+        app:rv_longLineWidth="1.5dp"
+        />
+
+    <TextView
+        android:id="@+id/value"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Hello World!"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_below="@+id/rulerView"
+        android:layout_marginTop="20dp"
+        android:layout_centerInParent="true"
+        android:textColor="@color/black"/>
+
+</RelativeLayout>
